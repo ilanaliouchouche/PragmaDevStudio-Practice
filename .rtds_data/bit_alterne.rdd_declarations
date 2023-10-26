@@ -1,0 +1,56 @@
+Ä}q(UversionqU6.0.1qUobjectq}q(Useq_to_elt_typeq}qUordered_decl_nodesq]q	((cpragmadev.main.business.l1lll1lll1lll_opy_
+l1ll1lll1111l1_opy_
+q
+oq}q(UtextqU:val = integer default 0 ; constants 0 , 1 endsyntype val ;qU
+identifierqU2:8qUtypeqUsyntypedeclqUchildrenq]q((h
+oq}q(hUvalqhU2:8qhUsyntypenameqh]qU)_l1ll1lll1111l1_opy___11llllll11llll_opy_q(h
+oq}q(hhhhhhhhhhubub(h
+oq}q(hUintegerq hU2:14q!hUtypenameq"h]q#hhub(h
+oq$}q%(hU0hU3:8q&hU	dfltvalueq'h]q((h
+oq)}q*(hU0hU3:8q+hUnbexprq,h]q-hh$ubahhub(h
+oq.}q/(hUconstants 0 , 1q0hU4:0q1hUconstraintsq2h]q3((h
+oq4}q5(hU0hU4:10q6hU
+constraintq7h]q8((h
+oq9}q:(hU0hU4:10q;hUoperand1q<h]q=(h
+oq>}q?(hU0hU4:10q@hUnbexprqAh]qBhh9ubahh4ub(cpragmadev.main.business.l1lll1lll1lll_opy_
+l1l11l111111l_opy_
+qCoqD}qE(hU=hNhU	cnstrntopqFh]qGubehh.ub(h
+oqH}qI(hU1hU4:13qJhU
+constraintqKh]qL((h
+oqM}qN(hU1hU4:13qOhUoperand1qPh]qQ(h
+oqR}qS(hU1hU4:13qThUnbexprqUh]qVhhMubahhHub(hCoqW}qX(hU=hNhhFh]qYubehh.ubehhubeh(h
+oqZ}q[(hU…signal medium_error;
+signal PUT, GET, dm(val), am(val);
+syntype val = integer
+  default 0;
+  constants 0, 1
+endsyntype val;
+newtype montype
+operators
+      op : boolean -> boolean;
+endnewtype montype;
+q\hNhUdatadeclq]h]q^((h
+oq_}q`(hUmedium_errorqahU0:7qbhUmsgdeclqch]qd(h
+oqe}qf(hUmedium_errorqghU0:7qhhUmsgnameqih]qjh(h
+oqk}ql(hhahhbhhchhdhh_ububahhZub(h
+oqm}qn(hU,signal PUT , GET , dm ( val ) , am ( val ) ;qohU1:0qphU	cmpnddeclqqh]qr((h
+oqs}qt(hUPUTquhU1:7qvhUmsgdeclqwh]qx(h
+oqy}qz(hUPUTq{hU1:7q|hUmsgnameq}h]q~hhsubahhmub(h
+oq}qÄ(hUGETqÅhU1:12qÇhUmsgdeclqÉh]qÑ(h
+oqÖ}qÜ(hUGETqáhU1:12qàhUmsgnameqâh]qähhubahhmub(h
+oqã}qå(hU
+dm ( val )qçhU1:17qéhUmsgdeclqèh]qê((h
+oqë}qí(hUdmqìhU1:17qîhUmsgnameqïh]qñhhãub(h
+oqó}qò(hUvalqôhU1:20qöhUmsgparamqõh]qúhhãubehhmub(h
+oqù}qû(hU
+am ( val )qühU1:26q†hUmsgdeclq°h]q¢((h
+oq£}q§(hUamq•hU1:26q¶hUmsgnameqßh]q®hhùub(h
+oq©}q™(hUvalq´hU1:29q¨hUmsgparamq≠h]qÆhhùubehhmubehhZubh(h
+oqØ}q∞(hU@montype operators op : boolean -> boolean ; endnewtype montype ;q±hU6:8q≤hUtypedeclq≥h]q¥((h
+oqµ}q∂(hUmontypeq∑hU6:8q∏hUtypenameqπh]q∫h(h
+oqª}qº(hh±hh≤hh≥hh¥hhØubub(h
+oqΩ}qæ(hUop : boolean -> boolean ;qøhU8:0q¿hUopsdeclq¡h]q¬(h
+oq√}qƒ(hUop : boolean -> booleanq≈hU8:0q∆hUopdeclq«h]q»((h
+oq…}q (hUopqÀhU8:0qÃhUopnameqÕh]qŒhh√ub(h
+oqœ}q–(hUbooleanq—hU8:5q“hU	paramtypeq”h]q‘hh√ub(h
+oq’}q÷(hUbooleanq◊hU8:16qÿhUrettypeqŸh]q⁄hh√ubehhΩubahhªubehhZubehNububhØeuu.
