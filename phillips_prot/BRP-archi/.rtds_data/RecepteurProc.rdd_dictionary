@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE DictionaryObjects SYSTEM "rtdsDictionaryObjects.dtd">
+
+<DictionaryObjects version="11340" language="sdl" diagramType="prcs">
+<Signal id="SIG1" name="DAT">
+<UsingSymbols>
+<SymbolReference symbolId="SYM3" usingKind="input"/>
+<SymbolReference symbolId="SYM22" usingKind="input"/>
+<SymbolReference symbolId="SYM25" usingKind="input"/>
+<SymbolReference symbolId="SYM24" usingKind="input"/>
+<SymbolReference symbolId="SYM23" usingKind="input"/>
+</UsingSymbols>
+</Signal>
+<Signal id="SIG2" name="RFST">
+<UsingSymbols>
+<SymbolReference symbolId="SYM9" usingKind="output"/>
+<SymbolReference symbolId="SYM26" usingKind="output"/>
+</UsingSymbols>
+</Signal>
+<Signal id="SIG3" name="ACK">
+<UsingSymbols>
+<SymbolReference symbolId="SYM67" usingKind="output"/>
+<SymbolReference symbolId="SYM71" usingKind="output"/>
+<SymbolReference symbolId="SYM70" usingKind="output"/>
+<SymbolReference symbolId="SYM68" usingKind="output"/>
+<SymbolReference symbolId="SYM69" usingKind="output"/>
+</UsingSymbols>
+</Signal>
+<Signal id="SIG4" name="Tr" isTimer="TRUE">
+<UsingSymbols>
+<SymbolReference symbolId="SYM21" usingKind="output"/>
+<SymbolReference symbolId="SYM44" usingKind="input"/>
+</UsingSymbols>
+</Signal>
+<Signal id="SIG5" name="RNOK">
+<UsingSymbols>
+<SymbolReference symbolId="SYM45" usingKind="output"/>
+<SymbolReference symbolId="SYM41" usingKind="output"/>
+</UsingSymbols>
+</Signal>
+<Signal id="SIG6" name="RINC">
+<UsingSymbols>
+<SymbolReference symbolId="SYM28" usingKind="output"/>
+<SymbolReference symbolId="SYM27" usingKind="output"/>
+</UsingSymbols>
+</Signal>
+<Signal id="SIG7" name="ROK">
+<UsingSymbols>
+<SymbolReference symbolId="SYM29" usingKind="output"/>
+</UsingSymbols>
+</Signal>
+<Item id="ITEM1" type="process" name="RecepteurProc" scope="current" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<Body>
+<SentSignals>
+<SignalReference id="SIG3"/>
+<SignalReference id="SIG4"/>
+<SignalReference id="SIG6"/>
+<SignalReference id="SIG7"/>
+<SignalReference id="SIG2"/>
+<SignalReference id="SIG5"/>
+</SentSignals>
+<ReceivedSignals>
+<SignalReference id="SIG1"/>
+<SignalReference id="SIG4"/>
+</ReceivedSignals>
+</Body>
+</Item>
+<Item id="ITEM10" type="type" name="monbit" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<UsingSymbols>
+<SymbolReference symbolId="SYM4"/>
+</UsingSymbols>
+</Item>
+<Item id="ITEM11" type="variable" name="p4" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<UsingSymbols>
+<SymbolReference symbolId="SYM59"/>
+<SymbolReference symbolId="SYM28"/>
+<SymbolReference symbolId="SYM60"/>
+<SymbolReference symbolId="SYM24"/>
+<SymbolReference symbolId="SYM4"/>
+</UsingSymbols>
+</Item>
+<Item id="ITEM12" type="variable" name="pack5" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<UsingSymbols>
+<SymbolReference symbolId="SYM70"/>
+</UsingSymbols>
+</Item>
+<Item id="ITEM13" type="variable" name="bit" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<UsingSymbols>
+<SymbolReference symbolId="SYM51"/>
+<SymbolReference symbolId="SYM50"/>
+<SymbolReference symbolId="SYM57"/>
+<SymbolReference symbolId="SYM56"/>
+<SymbolReference symbolId="SYM60"/>
+<SymbolReference symbolId="SYM35"/>
+<SymbolReference symbolId="SYM37"/>
+<SymbolReference symbolId="SYM65"/>
+<SymbolReference symbolId="SYM62"/>
+</UsingSymbols>
+</Item>
+<Item id="ITEM14" type="variable" name="p5" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<UsingSymbols>
+<SymbolReference symbolId="SYM65"/>
+<SymbolReference symbolId="SYM64"/>
+<SymbolReference symbolId="SYM29"/>
+<SymbolReference symbolId="SYM25"/>
+<SymbolReference symbolId="SYM4"/>
+</UsingSymbols>
+</Item>
+<Item id="ITEM15" type="variable" name="pack2" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<UsingSymbols>
+<SymbolReference symbolId="SYM67"/>
+</UsingSymbols>
+</Item>
+<Item id="ITEM16" type="variable" name="p3" parentId="ITEM1" scope="none" variableTypeName="packet" variableTypeId="ITEM6" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<DefiningSymbols>
+<SymbolReference symbolId="SYM4" positions="2,4"/>
+</DefiningSymbols>
+</Item>
+<Item id="ITEM17" type="variable" name="p1" parentId="ITEM1" scope="none" variableTypeName="packet" variableTypeId="ITEM6" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<DefiningSymbols>
+<SymbolReference symbolId="SYM4" positions="0,4"/>
+</DefiningSymbols>
+</Item>
+<Item id="ITEM18" type="variable" name="p5" parentId="ITEM1" scope="none" variableTypeName="packet" variableTypeId="ITEM6" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<DefiningSymbols>
+<SymbolReference symbolId="SYM4" positions="4,4"/>
+</DefiningSymbols>
+</Item>
+<Item id="ITEM19" type="variable" name="pack1" parentId="ITEM1" scope="none" variableTypeName="packet" variableTypeId="ITEM6" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<DefiningSymbols>
+<SymbolReference symbolId="SYM4" positions="7,4"/>
+</DefiningSymbols>
+</Item>
+<Item id="ITEM2" type="variable" name="NOW" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<UsingSymbols>
+<SymbolReference symbolId="SYM21"/>
+</UsingSymbols>
+</Item>
+<Item id="ITEM20" type="variable" name="pack3" parentId="ITEM1" scope="none" variableTypeName="packet" variableTypeId="ITEM6" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<DefiningSymbols>
+<SymbolReference symbolId="SYM4" positions="9,4"/>
+</DefiningSymbols>
+</Item>
+<Item id="ITEM21" type="variable" name="p2" parentId="ITEM1" scope="none" variableTypeName="packet" variableTypeId="ITEM6" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<DefiningSymbols>
+<SymbolReference symbolId="SYM4" positions="1,4"/>
+</DefiningSymbols>
+</Item>
+<Item id="ITEM22" type="variable" name="pack2" parentId="ITEM1" scope="none" variableTypeName="packet" variableTypeId="ITEM6" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<DefiningSymbols>
+<SymbolReference symbolId="SYM4" positions="8,4"/>
+</DefiningSymbols>
+</Item>
+<Item id="ITEM23" type="variable" name="pack5" parentId="ITEM1" scope="none" variableTypeName="packet" variableTypeId="ITEM6" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<DefiningSymbols>
+<SymbolReference symbolId="SYM4" positions="11,4"/>
+</DefiningSymbols>
+</Item>
+<Item id="ITEM24" type="variable" name="pack4" parentId="ITEM1" scope="none" variableTypeName="packet" variableTypeId="ITEM6" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<DefiningSymbols>
+<SymbolReference symbolId="SYM4" positions="10,4"/>
+</DefiningSymbols>
+</Item>
+<Item id="ITEM25" type="variable" name="bit" parentId="ITEM1" scope="none" variableTypeName="monbit" variableTypeId="ITEM10" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<DefiningSymbols>
+<SymbolReference symbolId="SYM4" positions="6,4"/>
+</DefiningSymbols>
+</Item>
+<Item id="ITEM26" type="variable" name="p4" parentId="ITEM1" scope="none" variableTypeName="packet" variableTypeId="ITEM6" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<DefiningSymbols>
+<SymbolReference symbolId="SYM4" positions="3,4"/>
+</DefiningSymbols>
+</Item>
+<Item id="ITEM27" type="state" name="idle" parentId="ITEM1" scope="none" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<DefiningSymbols>
+<SymbolReference symbolId="SYM2"/>
+</DefiningSymbols>
+<UsingSymbols>
+<SymbolReference symbolId="SYM2"/>
+<SymbolReference symbolId="SYM46"/>
+<SymbolReference symbolId="SYM47"/>
+<SymbolReference symbolId="SYM42"/>
+</UsingSymbols>
+</Item>
+<Item id="ITEM28" type="timer" name="Tr" parentId="ITEM1" scope="none" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<DefiningSymbols>
+<SymbolReference symbolId="SYM21"/>
+</DefiningSymbols>
+<UsingSymbols>
+<SymbolReference symbolId="SYM31"/>
+<SymbolReference symbolId="SYM30"/>
+<SymbolReference symbolId="SYM32"/>
+<SymbolReference symbolId="SYM34"/>
+</UsingSymbols>
+</Item>
+<Item id="ITEM29" type="state" name="attente_autres_pack" parentId="ITEM1" scope="none" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<DefiningSymbols>
+<SymbolReference symbolId="SYM14"/>
+</DefiningSymbols>
+<UsingSymbols>
+<SymbolReference symbolId="SYM14"/>
+</UsingSymbols>
+</Item>
+<Item id="ITEM3" type="variable" name="p1" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<UsingSymbols>
+<SymbolReference symbolId="SYM3"/>
+<SymbolReference symbolId="SYM9"/>
+<SymbolReference symbolId="SYM35"/>
+<SymbolReference symbolId="SYM4"/>
+</UsingSymbols>
+</Item>
+<Item id="ITEM30" type="connector" name="BrBit" parentId="ITEM1" scope="none" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<DefiningSymbols>
+<SymbolReference symbolId="SYM54"/>
+</DefiningSymbols>
+<UsingSymbols>
+<SymbolReference symbolId="SYM66"/>
+<SymbolReference symbolId="SYM55"/>
+<SymbolReference symbolId="SYM61"/>
+</UsingSymbols>
+</Item>
+<Item id="ITEM4" type="variable" name="pack3" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<UsingSymbols>
+<SymbolReference symbolId="SYM68"/>
+</UsingSymbols>
+</Item>
+<Item id="ITEM5" type="variable" name="p2" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<UsingSymbols>
+<SymbolReference symbolId="SYM22"/>
+<SymbolReference symbolId="SYM39"/>
+<SymbolReference symbolId="SYM50"/>
+<SymbolReference symbolId="SYM26"/>
+<SymbolReference symbolId="SYM4"/>
+</UsingSymbols>
+</Item>
+<Item id="ITEM6" type="type" name="packet" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<UsingSymbols>
+<SymbolReference symbolId="SYM4"/>
+</UsingSymbols>
+</Item>
+<Item id="ITEM7" type="variable" name="p3" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<UsingSymbols>
+<SymbolReference symbolId="SYM53"/>
+<SymbolReference symbolId="SYM23"/>
+<SymbolReference symbolId="SYM27"/>
+<SymbolReference symbolId="SYM56"/>
+<SymbolReference symbolId="SYM4"/>
+</UsingSymbols>
+</Item>
+<Item id="ITEM8" type="variable" name="pack4" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<UsingSymbols>
+<SymbolReference symbolId="SYM69"/>
+</UsingSymbols>
+</Item>
+<Item id="ITEM9" type="variable" name="pack1" scope="global" defined="FALSE" anchorItemId="ITEM1" searchPolicy="-1" formalParameterOrder="-" isFormalParam="FALSE" isSyntype="FALSE">
+<UsingSymbols>
+<SymbolReference symbolId="SYM71"/>
+</UsingSymbols>
+</Item>
+</DictionaryObjects>
